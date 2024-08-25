@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100%;
+	color: #2c2e2f;
+	font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 93.75%;
+}
+
+main {
+	min-height: 92vh;
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+
+.container {
+	padding: 42px 42px 36px;
+	border: 1px solid #eaeced;
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+	min-width: 460px;
+}
+.paypal-logo-long {
+	background: transparent
+		url(https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg) top
+		center no-repeat;
+	background-size: auto 28px;
+	width: 129px;
+	height: 32px;
+	display: block;
+}
+
+.paypal-logo {
+	margin: 0 auto 20px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.form__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.form__container input,
+.form__container .btn__login,
+.form__container .btn__signUp {
+	border-radius: 4px;
+	height: 45px;
+}
+
+.form__container input {
+	margin-bottom: 20px;
+	width: 100%;
+	padding-left: 10px;
+	outline: none;
+	border: 1px solid gray;
+	display: flex;
+	align-items: center;
+}
+
+.form__container input::placeholder {
+	font-weight: bolder;
+	font-size: 0.86rem;
+}
+
+.form__container input:focus {
+	border: 1px solid #0070ba;
+}
+
+.form__container .btn__login {
+	color: white;
+	background-color: #0070ba;
+	border: 1px solid #0070ba;
+}
+
+.btn__login,
+.btn__signUp {
+	font-size: 0.95rem;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 0.4s ease-out 0s;
+}
+
+.btn__login:hover {
+	background-color: #0066af;
+}
+
+.btn__signUp:hover {
+	background-color: #d4d4d4;
+}
+
+.form__container > .forget__cta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 0 0;
+}
+
+.form__container > .forget__cta a {
+	text-decoration: none;
+	color: #0070ba;
+	font-size: 15.3px;
+}
+
+.separator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.separator .first,
+.separator .last {
+	width: 100%;
+	border-bottom: 1px solid #2c2e2f2f;
+}
+
+.separator .center span {
+	margin: 10px;
+	color: #2c2e2f;
+	opacity: 0.7;
+}
+
+.btn__signUp {
+	background-color: #e0e6ea;
+	color: #2c2e2f;
+	border: none;
+}
+
+footer {
+	height: 40px;
+	background-color: #f7f9fa;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	padding-top: 14px;
+}
+
+footer a {
+	font-size: 11px;
+	color: #666666;
+	transition: color 0.2s ease-out 0s;
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+footer a:hover {
+	text-decoration: underline solid rgb(102, 102, 102);
+}
